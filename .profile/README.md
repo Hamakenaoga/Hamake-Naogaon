@@ -1,53 +1,53 @@
-# <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20Gestures/Waving%20Hand.png" alt="Waving Hand" width="40" /> স্বাগতম! আমরা "হামাকে নওগাঁ"
+# 🩸 হামাকে নওগাঁ: জরুরি সেবায় আমরা
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge&logo=github" />
   <img src="https://img.shields.io/badge/Location-Naogaon%2C%20BD-red?style=for-the-badge&logo=google-maps" />
-  <img src="https://img.shields.io/badge/Service-Blood%20Donation-critical?style=for-the-badge&logo=heart" />
+  <img src="https://img.shields.io/badge/Service-Humanitarian-critical?style=for-the-badge&logo=heart" />
 </p>
 
----
-
-### 🩸 আমাদের সম্পর্কে
-**"হামাকে নওগাঁ"** একটি অলাভজনক ও মানবিক স্বেচ্ছাসেবী প্ল্যাটফর্ম। আমরা মূলত নওগাঁ জেলার মানুষের জন্য জরুরি প্রয়োজনে **রক্তদাতা খুঁজে পাওয়া** এবং অন্যান্য **জরুরি সেবা** নিশ্চিত করতে কাজ করে যাচ্ছি। আমাদের লক্ষ্য প্রযুক্তির সঠিক ব্যবহারের মাধ্যমে মানুষের জীবন বাঁচানো।
+"হামাকে নওগাঁ" নওগাঁ জেলার মানুষের জন্য একটি মানবিক ও সম্পূর্ণ অলাভজনক স্বেচ্ছাসেবী উদ্যোগ। আমাদের লক্ষ্য হলো জরুরি মুহূর্তে রক্তদাতা খুঁজে পাওয়া এবং অন্যান্য নাগরিক সেবা প্রাপ্তিকে সহজ ও দ্রুততর করা।
 
 ---
 
-### 🚀 আমাদের মূল লক্ষ্যসমূহ (Goals)
-* 🩸 **জরুরি রক্তদান:** নওগাঁর ১১টি উপজেলায় একটি শক্তিশালী ও নির্ভরযোগ্য ব্লাড ডোনার ডাটাবেজ তৈরি করা।
-* 🚑 **দ্রুত সেবা:** বিপদের সময় মানুষের পাশে সঠিক তথ্য নিয়ে দাঁড়িয়ে দ্রুত সমাধান নিশ্চিত করা।
-* 🤝 **স্বেচ্ছাসেবী নেটওয়ার্ক:** তরুণ প্রজন্মকে একত্রিত করে সামাজিক ও মানবিক কাজে উদ্বুদ্ধ করা।
+### 🌟 আমাদের লক্ষ্য ও বৈশিষ্ট্য
+- **স্বেচ্ছায় রক্তদান:** জরুরি প্রয়োজনে রক্তের গ্রুপ অনুযায়ী দাতা খুঁজে পেতে সহায়তা করা।
+- **উপজেলা ভিত্তিক ডাটাবেজ:** রানীনগরসহ নওগাঁর ১১টি উপজেলার মানুষের জন্য স্থানীয়ভাবে সেবা নিশ্চিত করা।
+- **নিরাপদ ও গোপনীয়:** রক্তদাতার ব্যক্তিগত তথ্যের সর্বোচ্চ সুরক্ষা প্রদান করা।
+- **সরাসরি সংযোগ:** কোনো মধ্যসত্ত্বভোগী ছাড়াই সরাসরি দাতার সাথে যোগাযোগের মাধ্যম।
 
 ---
 
-### 💻 আমাদের টেকনিক্যাল প্রজেক্ট
-* 🌐 **[হামাকে নওগাঁ মেইন প্ল্যাটফর্ম](https://hamakenaoga.github.io/Hamake-Naogaon/)** - এখান থেকেই সরাসরি তথ্য জমা দেওয়া এবং রক্তদাতা খোঁজা যায়।
+### 🛠️ কারিগরি বর্ণনা (Tech Stack)
+প্রজেক্টটি সহজ কিন্তু কার্যকর প্রযুক্তিতে তৈরি করা হয়েছে:
+- **Frontend:** HTML5, CSS3 (Modern UI/UX ডিজাইন)।
+- **Backend:** Google Apps Script।
+- **Database:** Google Sheets (রিয়েল-টাইম ডাটা স্টোরেজ)।
+- **Hosting:** GitHub Pages।
 
 ---
 
-### 👥 আমাদের অ্যাডমিন প্যানেল (Admin Team)
+### 📁 ফাইল বিন্যাস
+- `index.html`: ওয়েবসাইটের মূল গঠন ও ডিজাইন।
+- `cover.png`: নওগাঁর ঐতিহ্যের ছোঁয়ায় তৈরি ব্যানার।
+- `README.md`: প্রজেক্টের পরিচিতি ও ব্যবহারের নিয়মাবলী।
+
+---
+
+### 👥 আমাদের অ্যাডমিন প্যানেল
 যেকোনো জিজ্ঞাসা বা সহযোগিতার জন্য সরাসরি আমাদের সাথে যোগাযোগ করুন:
 
-| নাম | ভূমিকা | যোগাযোগ |
+| নাম | ভূমিকা | ফেসবুক প্রোফাইল |
 | :--- | :--- | :--- |
-| **ইউনুস আলী** | Admin | [📩 Facebook Profile](https://www.facebook.com/YounusAli.fb) |
-| **মিজানুর রহমান** | Admin | [📩 Facebook Profile](https://www.facebook.com/mizanur110) |
-| **মোহাম্মদ রায়হান** | Admin | [📩 Facebook Profile](https://www.facebook.com/mohammad.raihan.10441) |
+| **ইউনুস আলী** | Admin | [📩 যোগাযোগ](https://www.facebook.com/YounusAli.fb) |
+| **মিজানুর রহমান** | Admin | [📩 যোগাযোগ](https://www.facebook.com/mizanur110) |
+| **মোহাম্মদ রায়হান** | Admin | [📩 যোগাযোগ](https://www.facebook.com/mohammad.raihan.10441) |
 
 ---
 
-### 📢 আমাদের সাথে যুক্ত থাকুন
-আমাদের ফেসবুক পেজে যুক্ত হয়ে আপনিও এই মানবিক যাত্রার অংশ হতে পারেন:
-
-<p align="left">
-  <a href="https://www.facebook.com/Hamakenaoga" target="_blank">
-    <img src="https://img.shields.io/badge/Facebook-Page-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
-  </a>
-</p>
+### 🌐 যোগাযোগ ও সোশ্যাল মিডিয়া
+আমাদের অফিসিয়াল প্ল্যাটফর্ম ভিজিট করুন এবং আমাদের সাথে যুক্ত থাকুন:  
+👉 **[অফিসিয়াল ওয়েবসাইট](https://hamakenaoga.github.io/Hamake-Naogaon/)** 👉 **[ফেসবুক পেজ](https://www.facebook.com/Hamakenaoga)**
 
 ---
-
-<p align="center">
-  <b>"নওগাঁর প্রয়োজনে, আপনার পাশে"</b> <br>
-  © ২০২০-২০২৬ | <b>হামাকে নওগাঁ</b> | জনস্বার্থে একটি মানবিক উদ্যোগ।
-</p>
+**"নওগাঁর প্রয়োজনে, আপনার পাশে"** © ২০২০-২০২৬ | **হামাকে নওগাঁ** | জনস্বার্থে একটি মানবিক উদ্যোগ।
