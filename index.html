@@ -7,41 +7,61 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Hind Siliguri', sans-serif; background-color: #ffffff; }
-        .input-field { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; outline: none; margin-bottom: 15px; }
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: #ffffff; margin: 0; padding: 0; }
+        .cover-photo { width: 100%; height: 200px; object-fit: cover; border-bottom: 4px solid #00897B; }
+        .form-container { padding: 20px; max-width: 400px; margin: auto; }
+        .input-group { margin-bottom: 15px; }
+        .input-group label { display: block; font-size: 14px; color: #555; margin-bottom: 5px; font-weight: 600; }
+        .input-field { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; outline: none; font-size: 15px; }
         .input-field:focus { border-color: #00897B; }
+        .submit-btn { width: 100%; bg-[#00897B]; background-color: #00897B; color: white; padding: 12px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 16px; transition: 0.3s; }
+        .submit-btn:hover { background-color: #00695C; }
     </style>
 </head>
-<body class="p-6">
+<body>
 
-    <div class="max-w-sm mx-auto">
-        <h2 class="text-xl font-bold text-gray-800 mb-6">রক্তদাতা রেজিস্ট্রেশন</h2>
+    <img src="https://via.placeholder.com/600x300?text=AmaKe+Naogaon+Cover" alt="Cover Photo" class="cover-photo">
+
+    <div class="form-container">
+        <h2 class="text-xl font-bold text-gray-800 mb-4 text-center">রক্তদাতা রেজিস্ট্রেশন</h2>
         
         <form id="registration-form">
-            <input type="text" name="Name" placeholder="আপনার নাম" required class="input-field">
+            <div class="input-group">
+                <label>আপনার নাম</label>
+                <input type="text" name="Name" placeholder="নাম লিখুন" required class="input-field">
+            </div>
             
-            <input type="tel" name="Phone" placeholder="ফোন নম্বর" required class="input-field">
+            <div class="input-group">
+                <label>মোবাইল নম্বর</label>
+                <input type="tel" name="Phone" placeholder="০১XXXXXXXXX" required class="input-field">
+            </div>
             
-            <select name="BloodGroup" required class="input-field">
-                <option value="">রক্তের গ্রুপ নির্বাচন করুন</option>
-                <option value="A+">A+</option>
-                <option value="A-">A-</option>
-                <option value="B+">B+</option>
-                <option value="B-">B-</option>
-                <option value="O+">O+</option>
-                <option value="O-">O-</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB-</option>
-            </select>
+            <div class="input-group">
+                <label>রক্তের গ্রুপ</label>
+                <select name="BloodGroup" required class="input-field">
+                    <option value="">নির্বাচন করুন</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div>
             
-            <input type="text" name="Location" placeholder="লোকেশন (থানা/গ্রাম)" required class="input-field">
+            <div class="input-group">
+                <label>উপজেলা</label>
+                <input type="text" name="Location" placeholder="যেমন: সাপাহার" required class="input-field">
+            </div>
             
-            <label class="text-xs text-gray-500 block mb-1 ml-1">শেষ রক্তদানের তারিখ</label>
-            <input type="date" name="LastDonation" class="input-field">
+            <div class="input-group">
+                <label>শেষ রক্তদানের তারিখ</label>
+                <input type="date" name="LastDonation" class="input-field">
+            </div>
 
-            <button type="submit" id="submit-btn" class="w-full bg-[#00897B] text-white py-3 rounded-lg font-bold mt-4 shadow-sm">
-                তথ্য জমা দিন
-            </button>
+            <button type="submit" id="submit-btn" class="submit-btn">রেজিস্ট্রেশন সম্পন্ন করুন</button>
         </form>
     </div>
 
@@ -53,19 +73,19 @@
         form.addEventListener('submit', e => {
             e.preventDefault();
             btn.disabled = true;
-            btn.innerHTML = "প্রসেসিং...";
+            btn.innerHTML = "অপেক্ষা করুন...";
 
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                alert("সফলভাবে জমা হয়েছে!");
+                alert("ধন্যবাদ! রেজিস্ট্রেশন সফল হয়েছে।");
                 form.reset();
                 btn.disabled = false;
-                btn.innerHTML = "তথ্য জমা দিন";
+                btn.innerHTML = "রেজিস্ট্রেশন সম্পন্ন করুন";
             })
             .catch(error => {
-                alert("আবার চেষ্টা করুন");
+                alert("দুঃখিত, আবার চেষ্টা করুন।");
                 btn.disabled = false;
-                btn.innerHTML = "তথ্য জমা দিন";
+                btn.innerHTML = "রেজিস্ট্রেশন সম্পন্ন করুন";
             });
         });
     </script>
