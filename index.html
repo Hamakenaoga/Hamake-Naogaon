@@ -3,218 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>হামাকে নওগাঁ: জরুরি সেবায় আমরা</title>
+    <title>রক্তদাতা রেজিস্ট্রেশন - আমাকে নওগাঁ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap');
-
-        body {
-            font-family: 'Hind Siliguri', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f1f8f3;
-            color: #333;
-        }
-
-        .header {
-            background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.9)), 
-                        url('cover.png'); 
-            background-size: cover;
-            background-position: center;
-            height: 320px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .main-title {
-            color: #28a745; 
-            font-size: 28px;
-            font-weight: 700;
-            margin: 100px 0 5px 0;
-            text-shadow: 1px 1px 3px rgba(255,255,255,0.9);
-        }
-
-        .sub-title {
-            color: #2d5a27;
-            font-size: 16px;
-            margin: 0;
-            font-weight: 600;
-        }
-
-        .container {
-            max-width: 450px;
-            margin: -50px auto 30px;
-            background: #ffffff;
-            padding: 30px 25px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            position: relative;
-            z-index: 99;
-        }
-
-        .section-title {
-            font-size: 19px;
-            margin-bottom: 25px;
-            color: #444;
-            text-align: center;
-        }
-
-        .input-group {
-            margin-bottom: 18px;
-            position: relative;
-        }
-
-        .input-group i {
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #2d5a27;
-            font-size: 18px;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 14px 15px 14px 50px;
-            border: 1px solid #e0e0e0;
-            border-radius: 12px;
-            background-color: #fcfdfc;
-            font-size: 15px;
-            box-sizing: border-box;
-            outline: none;
-            transition: 0.3s;
-        }
-
-        .submit-btn {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 16px;
-            width: 100%;
-            border-radius: 12px;
-            font-size: 17px;
-            font-weight: 700;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
-            margin-top: 10px;
-        }
-
-        .privacy-note {
-            font-size: 11px;
-            color: #888;
-            text-align: center;
-            margin-top: 20px;
-            line-height: 1.5;
-        }
-
-        .footer {
-            text-align: center;
-            padding-bottom: 30px;
-            font-size: 13px;
-            color: #666;
-        }
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: #f0fdf4; }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="flex items-center justify-center min-h-screen p-4">
 
-<div class="header">
-    <h1 class="main-title">হামাকে নওগাঁ: জরুরি সেবায় আমরা</h1>
-    <p class="sub-title">বিপদে নওগাঁবাসীর পাশে দাঁড়ানোর একটি মানবিক উদ্যোগ</p>
-</div>
-
-<div class="container">
-    <h3 class="section-title">নিরাপদে ও গোপনে আপনার তথ্য দিন</h3>
-    
-    <form id="naogaon-form">
-        <div class="input-group">
-            <i class="fas fa-user"></i>
-            <input type="text" name="Name" placeholder="আপনার নাম" required>
-        </div>
+    <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md border-t-4 border-[#00897B]">
+        <h2 class="text-2xl font-bold text-[#00897B] mb-6 text-center">রক্তদাতা রেজিস্ট্রেশন</h2>
         
-        <div class="input-group">
-            <i class="fas fa-phone-alt"></i>
-            <input type="tel" name="Phone" placeholder="মোবাইল নম্বর" required>
-        </div>
-        
-        <div class="input-group">
-            <i class="fas fa-tint" style="color: #c9302c;"></i>
-            <select name="BloodGroup" required>
-                <option value="">রক্তের গ্রুপ</option>
-                <option value="A+">A+</option>
-                <option value="A-">A-</option>
-                <option value="B+">B+</option>
-                <option value="B-">B-</option>
-                <option value="O+">O+</option>
-                <option value="O-">O-</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB-</option>
-            </select>
-        </div>
-        
-        <div class="input-group">
-            <i class="fas fa-map-marker-alt" style="color: #d9534f;"></i>
-            <select name="Upazila" required>
-                <option value="">উপজেলা নির্বাচন করুন</option>
-                <option value="রানীনগর">রানীনগর</option>
-                <option value="নওগাঁ সদর">নওগাঁ সদর</option>
-                <option value="আত্রাই">আত্রাই</option>
-                <option value="মহাদেবপুর">মহাদেবপুর</option>
-                <option value="পত্নীতলা">পত্নীতলা</option>
-                <option value="ধামুইরহাট">ধামুইরহাট</option>
-                <option value="সাপাহার">সাপাহার</option>
-                <option value="পোরশা">পোরশা</option>
-                <option value="মান্দা">মান্দা</option>
-                <option value="বদলগাছী">বদলগাছী</option>
-                <option value="নিয়ামতপুর">নিয়ামতপুর</option>
-            </select>
-        </div>
+        <form id="registration-form" class="space-y-4">
+            <div>
+                <label class="block text-sm font-semibold text-gray-700">আপনার নাম</label>
+                <input type="text" name="Name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00897B]" placeholder="যেমন: আব্দুর রহমান">
+            </div>
 
-        <button type="submit" class="submit-btn" id="submit-btn">
-            তথ্য জমা দিতে এখানে ক্লিক করুন 
-            <i class="fas fa-paper-plane"></i>
-        </button>
-    </form>
-    
-    <p class="privacy-note">* আপনার তথ্য আমাদের সুরক্ষিত ডেটাবেজে গোপন থাকবে এবং কোনো অবস্থাতেই ফেসবুকে বা কোথাও জনসমক্ষে প্রকাশ করা হবে না।</p>
-</div>
+            <div>
+                <label class="block text-sm font-semibold text-gray-700">ফোন নম্বর</label>
+                <input type="tel" name="Phone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00897B]" placeholder="০১XXXXXXXXX">
+            </div>
 
-<div class="footer">
-    © ২০২০ হামাকে নওগাঁ।
-</div>
+            <div>
+                <label class="block text-sm font-semibold text-gray-700">রক্তের গ্রুপ</label>
+                <select name="BloodGroup" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00897B]">
+                    <option value="">নির্বাচন করুন</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxWYdUtwkkuJ8Sqytx7An-Rws0L4sSsAtHcEMIEOTYRsbHFQbhd2scJ-JVW5v3pMwQdQw/exec'; 
-    const form = document.forms['naogaon-form'];
-    const btn = document.getElementById('submit-btn');
+            <div>
+                <label class="block text-sm font-semibold text-gray-700">লোকেশন (উপজেলা/গ্রাম)</label>
+                <input type="text" name="Location" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00897B]" placeholder="যেমন: সাপাহার, নওগাঁ">
+            </div>
 
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      btn.disabled = true;
-      btn.innerHTML = "অপেক্ষা করুন...";
-      
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            alert("ধন্যবাদ! আপনার তথ্য সফলভাবে জমা হয়েছে।");
-            form.reset();
-            btn.disabled = false;
-            btn.innerHTML = "তথ্য জমা দিতে এখানে ক্লিক করুন <i class='fas fa-paper-plane'></i>";
-        })
-        .catch(error => {
-            console.error('Error!', error.message);
-            alert("দুঃখিত, তথ্য জমা দিতে সমস্যা হয়েছে।");
-            btn.disabled = false;
-            btn.innerHTML = "তথ্য জমা দিতে এখানে ক্লিক করুন <i class='fas fa-paper-plane'></i>";
+            <div>
+                <label class="block text-sm font-semibold text-gray-700">শেষ রক্তদানের তারিখ</label>
+                <input type="date" name="LastDonation" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00897B]">
+            </div>
+
+            <input type="hidden" name="Latitude" value="">
+            <input type="hidden" name="Longitude" value="">
+
+            <button type="submit" id="submit-btn" class="w-full bg-[#00897B] text-white font-bold py-3 rounded-lg hover:bg-[#00695C] transition-all">
+                তথ্য জমা দিন
+            </button>
+        </form>
+    </div>
+
+    <script>
+        // আপনার নতুন স্ক্রিপ্ট ইউআরএল
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxWYdUtwkkuJ8Sqytx7An-Rws0L4sSsAtHcEMIEOTYRsbHFQbhd2scJ-JVW5v3pMwQdQw/exec';
+        const form = document.getElementById('registration-form');
+        const btn = document.getElementById('submit-btn');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            
+            // বাটন ডিসেবল করা
+            btn.disabled = true;
+            btn.innerHTML = "প্রসেসিং...";
+            btn.classList.add('opacity-50');
+
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: new FormData(form)
+            })
+            .then(response => {
+                alert("সফলভাবে আপনার তথ্য গুগল শিটে জমা হয়েছে!");
+                form.reset();
+                btn.disabled = false;
+                btn.innerHTML = "তথ্য জমা দিন";
+                btn.classList.remove('opacity-50');
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert("দুঃখিত! ডাটা জমা হয়নি। ইন্টারনাল এরর।");
+                btn.disabled = false;
+                btn.innerHTML = "তথ্য জমা দিন";
+                btn.classList.remove('opacity-50');
+            });
         });
-    });
-</script>
-
+    </script>
 </body>
 </html>
